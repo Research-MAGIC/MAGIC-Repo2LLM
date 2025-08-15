@@ -1,7 +1,7 @@
 # 🌟 MAGIC Research GitHub Repository Analyzer
 
 <div align="center">
-  <img src="https://github.com/magicresearch/github-analyzer/assets/logo.png" alt="MAGIC Research Logo" width="200"/>
+  <img src="https://github.com/Research-MAGIC/MAGIC-Repo2LLM/assets/logo.png" alt="MAGIC Research Logo" width="200"/>
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
