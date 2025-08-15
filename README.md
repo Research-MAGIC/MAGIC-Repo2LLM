@@ -1,23 +1,24 @@
-# 🌟 MAGIC Research GitHub Repository Analyzer
+# 🌟 MAGIC-Repo2LLM
 
 <div align="center">
-  <img src="https://github.com/Research-MAGIC/MAGIC-Repo2LLM/assets/logo.png" alt="MAGIC Research Logo" width="200"/>
-  
+  <img src="assets/logo.png" alt="MAGIC Research Logo" width="200"/>
+
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
   [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?logo=docker&logoColor=white)](https://www.docker.com/)
   [![Powered by MAGIC](https://img.shields.io/badge/Powered%20by-MAGIC%20Research-purple)](https://researchmagic.com)
-  
-  **Transform GitHub repositories into AI-ready single files for analysis**
-  
-  [Website](https://researchmagic.com) • [Documentation](#documentation) • [Docker Hub](https://hub.docker.com/r/magicresearch/github-analyzer) • [Report Bug](https://github.com/magicresearch/github-analyzer/issues)
+
+  **Transform GitHub repositories into AI-ready single files for LLM analysis**
+
+  [Website](https://researchmagic.com) • [Documentation](#documentation) • [Docker Hub](https://hub.docker.com/r/magicresearch/repo2llm) • [Report Bug](https://github.com/Research-MAGIC/MAGIC-Repo2LLM/issues)
+
 </div>
 
 ---
 
 ## 🎯 Overview
 
-The **MAGIC Research GitHub Repository Analyzer** is a powerful tool designed to concatenate all Python source files from any GitHub repository into a single file, making it perfect for AI analysis, code review, and documentation purposes. This tool intelligently filters out test files, configuration files, and other non-essential code to provide clean, analyzable output.
+**MAGIC-Repo2LLM** is a powerful tool designed to concatenate all Python source files from any GitHub repository into a single file, making it perfect for Large Language Model (LLM) analysis, code review, and documentation purposes. This tool intelligently filters out test files, configuration files, and other non-essential code to provide clean, analyzable output optimized for AI consumption.
 
 ### ✨ Key Features
 
@@ -42,8 +43,8 @@ Dr. Masini leads MAGIC Research's AI initiatives, focusing on innovative solutio
 
 ```bash
 # Clone the repository
-git clone https://github.com/magicresearch/github-analyzer.git
-cd github-analyzer
+git clone https://github.com/Research-MAGIC/MAGIC-Repo2LLM.git
+cd MAGIC-Repo2LLM
 
 # Install dependencies
 pip install -r requirements.txt
@@ -58,8 +59,8 @@ Navigate to `http://localhost:8080` in your browser.
 
 ```bash
 # Using Docker directly
-docker build -t magic-github-analyzer .
-docker run -p 8080:8080 magic-github-analyzer
+docker build -t magic-repo2llm .
+docker run -p 8080:8080 magic-repo2llm
 
 # Or using Docker Compose
 docker-compose up
@@ -68,8 +69,8 @@ docker-compose up
 ### Option 3: Pull from Docker Hub
 
 ```bash
-docker pull magicresearch/github-analyzer:latest
-docker run -p 8080:8080 magicresearch/github-analyzer:latest
+docker pull magicresearch/repo2llm:latest
+docker run -p 8080:8080 magicresearch/repo2llm:latest
 ```
 
 ## 📖 Documentation
@@ -96,6 +97,7 @@ The analyzer intelligently filters files by:
 ### Token Counting
 
 Uses OpenAI's `cl100k_base` encoding to calculate token counts, helping you:
+
 - Estimate API costs for AI analysis
 - Ensure content fits within model context windows
 - Optimize file selection for analysis
@@ -112,8 +114,8 @@ Uses OpenAI's `cl100k_base` encoding to calculate token counts, helping you:
 
 ```bash
 # Clone the repository
-git clone https://github.com/magicresearch/github-analyzer.git
-cd github-analyzer
+git clone https://github.com/Research-MAGIC/MAGIC-Repo2LLM.git
+cd MAGIC-Repo2LLM
 
 # Create virtual environment
 python -m venv venv
@@ -129,8 +131,10 @@ python app.py
 ### Project Structure
 
 ```
-github-analyzer/
+MAGIC-Repo2LLM/
 ├── app.py                 # Main application file
+├── assets/               # Assets and branding
+│   └── logo.png         # MAGIC Research logo
 ├── requirements.txt       # Python dependencies
 ├── Dockerfile            # Docker configuration
 ├── docker-compose.yml    # Docker Compose configuration
@@ -148,7 +152,7 @@ github-analyzer/
 ### Building the Image
 
 ```bash
-docker build -t magic-github-analyzer:latest .
+docker build -t magic-repo2llm:latest .
 ```
 
 ### Running with Custom Environment Variables
@@ -157,7 +161,7 @@ docker build -t magic-github-analyzer:latest .
 docker run -p 8080:8080 \
   -e NICEGUI_PORT=8080 \
   -e NICEGUI_HOST=0.0.0.0 \
-  magic-github-analyzer:latest
+  magic-repo2llm:latest
 ```
 
 ### Docker Compose with Volume Mounting
@@ -166,7 +170,7 @@ docker run -p 8080:8080 \
 version: '3.8'
 services:
   analyzer:
-    image: magicresearch/github-analyzer:latest
+    image: magicresearch/repo2llm:latest
     ports:
       - "8080:8080"
     volumes:
@@ -209,8 +213,8 @@ For support, questions, or feedback:
 
 - 📧 Email: [support@researchmagic.com](mailto:support@researchmagic.com)
 - 🌐 Website: [researchmagic.com](https://researchmagic.com)
-- 🐛 Issues: [GitHub Issues](https://github.com/magicresearch/github-analyzer/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/magicresearch/github-analyzer/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/Research-MAGIC/MAGIC-Repo2LLM/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/Research-MAGIC/MAGIC-Repo2LLM/discussions)
 
 ## 🚀 Roadmap
 
@@ -225,7 +229,7 @@ For support, questions, or feedback:
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=magicresearch/github-analyzer&type=Date)](https://star-history.com/#magicresearch/github-analyzer&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Research-MAGIC/MAGIC-Repo2LLM&type=Date)](https://star-history.com/#Research-MAGIC/MAGIC-Repo2LLM&Date)
 
 ---
 
