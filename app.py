@@ -460,7 +460,7 @@ def main_page():
                 repo_input = ui.input(
                     label="GitHub Repository URL",
                     placeholder="https://github.com/username/repository",
-                    value="https://github.com/cognitivecomputations/github2file"
+                    value="https://github.com/Research-MAGIC/MAGIC-Repo2LLM"
                 ).props('outlined dense').classes('flex-grow').style('min-width: 400px')
 
                 branch_input = ui.input(
